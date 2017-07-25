@@ -1,6 +1,6 @@
 # Practica Final Programacion Web
 
-##Adaptación de la web de la tienda de música
+**Adaptación de la web de la tienda de música**
 
 El objetivo de este segundo ejercicio evaluable es poner en práctica los conocimientos adquiridos de PHP y JavaScript, así como la capacidad para incorporar otros conceptos no estudiados en las clases de prácticas. El contexto será la tienda digital de música que se desarrolló en la primera práctica.
 
