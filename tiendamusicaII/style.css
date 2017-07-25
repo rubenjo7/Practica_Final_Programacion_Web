@@ -1,0 +1,1513 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+*----------------------------------------------------------------
+*                Centrado de la pagina principal
+*----------------------------------------------------------------
+**/
+html, body {
+	background-color: #999;
+	/*Simplemente digo que pille el 100% de la pagina y no deje bordes porque si no se comera la pagina sin mostrar la barra*/
+	height: 100%;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #b10c0d;
+}
+
+#nombreseccion{
+	clear: both;
+	float: left;
+}
+
+
+/*--------------------------------------------------------------------------------
+*               El contenedor principal contiene toda la pagina y la centra
+*--------------------------------------------------------------------------------
+**/
+#contenedor{
+	/*Ancho total de la pagina*/
+	width:100%;
+	/*Centrado de la pagina*/
+	margin:auto;
+}
+
+/*
+*----------------------------------------------------------------
+*               Bloque de publicidad
+*----------------------------------------------------------------
+**/
+
+#publicidadder{
+	width:10%;
+	float:right;
+	height:1200px;
+	background-repeat: no-repeat;
+	
+}
+
+/*
+*----------------------------------------------------------------------------------------
+*                Este contiene toda la pagina excepto la publicidad  90% de ancho
+*----------------------------------------------------------------------------------------
+**/
+#contenedorcentral{
+	width: 90%;
+	overflow: visible;
+	text-align: right;
+	float: left;
+}
+/*
+*----------------------------------------------------------------
+*               Nombre de la tienda
+*----------------------------------------------------------------
+**/
+#nombretienda{
+	height: auto;
+	margin-left: 1%;
+	margin-right: 1%;
+	width: auto;
+	background-color: #FFF;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+
+#rojo{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size: 300%;
+	text-decoration: none;
+	text-shadow: 1px 1px #CCC;
+	color: #b10c0d;
+	text-align: center;
+}
+
+
+/*
+*----------------------------------------------------------------
+*               Botones del header
+*----------------------------------------------------------------
+**/
+
+#acceso{
+	height: 50px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+
+}
+
+.boton_login {
+	border-color: #b10c0d;
+	text-align: center;
+}
+
+
+/*
+*--------------------------------------------------------------------------------
+*                Sistema para la separacion de novedades en portada
+*--------------------------------------------------------------------------------
+**/
+#bloquenovedades{
+	width:100%;
+	margin:auto;
+	float: center;
+	/*Con esto creamos una tabla*/
+	display:table;
+	overflow:hidden;
+}
+
+#margen{
+	width: 1%;
+	display: table-cell;
+}
+
+#row {
+	/*Hacemos un display de columnas*/
+	display: table-row;
+}
+
+#bloqueizq{
+	width:32%;
+	/*1columnas*/
+	display: table-cell;
+}
+
+#bloquesubiz{
+	width: 20%;
+	/*1columnas*/
+	display: table-cell;
+}
+
+#bloquesubder{
+	width: 80%;
+	/*1columnas*/
+	display: table-cell;
+}
+
+#bloqueder{
+	width:32%;
+	/*3columna*/
+	display: table-cell;
+}
+
+#bloquecentral{
+	width:32%;
+	/*2 columna*/
+	display: table-cell;
+}
+
+.CentrarNovedades {
+	margin-left:10%;
+	margin-right: 15%;
+}
+
+.novedades{
+	border: 2px solid black;
+	border-color: #b10c0d;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+}
+
+/*
+*----------------------------------------------------------------
+*               comentarios de las canciones
+*----------------------------------------------------------------
+**/
+.comentarios{
+	background-image:url(images/comentarios.jpg);
+	background-repeat: no-repeat;
+	background-position:left;
+	margin-top:10px;
+	margin-left:4px;
+	margin-right:0px;
+	height:40px;
+}
+
+.comentarios p{
+	float:left;
+	color:#333;
+	margin-left:4px;
+	margin-top:13px;
+}
+
+/*
+*--------------------------------------------------------------------------------
+*    Sistema para la separacion del centro de las secciones y el formulario
+*--------------------------------------------------------------------------------
+**/
+
+#contenedorcentral #centroSeccion{
+	float: left;
+	width: 98%;
+	text-align: left;
+}
+
+#contenedorcentral #centroSeccion h1{
+	font-family: "Monospace", cursive;
+	font-size: 40px;
+	color: #8B4513;
+}
+
+#contenedorcentral #centroSeccion a:link{
+	text-decoration: none;
+}
+
+#contenedorcentral #centroSeccion h2{
+	font-family: "Monospace", cursive;
+	font-size: 25px;
+	color: #8B4513;
+}
+
+#contenedorcentral #centroSeccion p{
+	font-family: "Monospace", cursive;
+	font-size: 15px;
+	color: #8B4513;
+}
+
+#contenedorcentral #izquierdaSeccion{
+	float: left;
+	width: 1%;
+}
+
+#contenedorcentral #derechaSeccion{
+	float: left;
+	width: 1%;
+}
+
+
+/*
+*--------------------------------------------------------------------------------
+*                Formulario
+*--------------------------------------------------------------------------------
+**/
+
+@charset "UTF-8";
+/* CSS Document */
+#formularioCompleto{
+	/*Centrado del formulario*/
+	float: left;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	/*Color gris de fondo*/
+	background-color:auto;
+	/*Pequeño bordeado gris mas oscuro que el fondo*/
+	border: 1px solid #bbbdb8;
+	/*Ancho del formulario de 400 pixeles*/
+	width:400px;
+}
+#formularioCompleto h1{
+	font-size:24px;
+	color:#8B4513;
+}
+#formularioCompleto h2{
+	text-align: left;
+	font-size:15px;
+	color:#8B4513;
+}
+#formularioCompleto table{
+	font-size:13px;
+	color:#8B4513;
+}
+#formularioCompleto p{
+	color:#8B4513;
+	margin:0;
+	text-align:left;
+}
+.boton {
+	margin-top:13px;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	color: #555;
+	display: inline-block;
+	font: bold 12px/12px HelveticaNeue, Arial;
+	padding: 8px 11px;
+	text-decoration: none;
+	background: #525252;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e5e5e', endColorstr='#434343');
+	background: -webkit-linear-gradient(top, #5e5e5e, #434343);
+	background: -moz-linear-gradient(top, #5e5e5e, #434343);
+	border-color: #4c4c4c #313131 #1f1f1f;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #2e2e2e;
+	box-shadow: 0 1px 1px #afafaf, inset 0 1px 0 #868686;
+}
+.boton:hover {
+	background: #5a5a5a;
+	border-color: #2c2c2c #1c1c1c #101010;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #363636;
+	box-shadow: 0 1px 1px #b1b1b1, inset 0 1px 0 #838383;
+}
+#contenedorerrores{
+	background-color: #e06b64;
+	width:400px;
+	margin:auto;
+}
+#contenedorerrores p{
+	margin:0;
+	text-align:center;
+	color:#ffffff!important;
+}
+#intentos {
+	background-color: #e06b64;
+	width:400px;
+	margin:auto;
+}
+#intentos p{
+	margin:0;
+	text-align:center;
+	color:#efb4b1 !important;
+}
+
+.error {
+	border:2px solid #e06b64;
+	box-shadow: 0 0 3px #aaa; 
+}
+.noError {
+	border:0;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------
+*              Respuesta del formulario
+*---------------------------------------------------------------------------------------------------------------------
+**/
+#gracias{
+	background: none repeat scroll 0 0 #F3F3F3;
+	border-radius: 5px;
+	color: #5CD053;
+	display: block;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 5px;
+	text-shadow: 1px 1px 1px #CCCCCC;
+	width: 100%;
+}
+
+/*
+*--------------------------------------------------------------------------------
+*                Sistema para la separacion del centro
+*--------------------------------------------------------------------------------
+**/
+
+#menucentral {
+	float: left;
+	width: 100%;
+}
+
+#menucentral #margencentral{
+	float: left;
+	width: 1%;
+}
+
+#menucentral #parteizq{
+	float: left;
+	width: 69%;
+}
+
+#menucentral #parteizq #izquierda{
+	float: left;
+	width: 50%;
+}
+
+#menucentral #parteizq #margencentral2{
+	float: left;
+	width: 1%;
+}
+
+#menucentral #parteizq #izquierda2{
+	float: right;
+	width: 90%;
+	margin-right: 5px;
+}
+
+#menucentral #parteizq #derecha{
+	float: left;
+	width: 49%;
+}
+
+#menucentral #parteizq #abajo2{
+	clear: both;
+	margin-top: 450px;
+	text-align: center;
+	width: 100%;
+}
+
+#menucentral #parteizq #derecha #tabla2{
+	width: 100%;
+	height: 80px;
+	border-spacing: inherit;
+}
+
+#menucentral #parteizq #derecha hr, .hrcolor {
+	height: 1px;
+	border: 0;
+	color: #666;
+	background-color: #708090;
+}
+
+#menucentral #parteizq #abajo2 #der{
+	float: left;
+	width: 32%;
+}
+
+#menucentral #parteizq #abajo2 #cen{
+	float: left;
+	width: 32%;
+}
+
+#menucentral #parteizq #abajo2 #iz{
+	float: left;
+	width: 32%;
+}
+
+#left2{
+	text-align: left;
+}
+
+#menucentral #parteizq #abajo2 #sep{
+	float: left;
+	width: 1%;
+}
+
+#menucentral #parteizq #sep #barra_vertical{
+	border-left: 2px solid #FFFFFF;
+	width:1px;
+	height:120px;
+}
+
+#tit{
+	text-align: left;
+	font-family: "Trebuchet MS", cursive;
+	font-size: 20px;
+	color: #8B4513;
+	width: auto;
+}
+
+#num{
+	text-align: center;
+	font-family: "Monospace", cursive;
+	font-size: 30px;
+	color: #8B4513;
+
+}
+
+#menucentral #parteder{
+	float: left;
+	width: 28%;
+}
+
+#menucentral #parteizq #disco {
+	width: 100%;
+}
+
+#menucentral #parteizq #disco h1{
+	text-align: center;
+	font-family: "Monospace", cursive;
+	font-size: 30px;
+	color: #8B4513;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#menucentral #parteizq #disco h2{
+	text-align: left;
+	font-family: "Monospace", cursive;
+	font-size: 20px;
+	color: #8B4513;
+	margin-top: 10px;
+	
+}
+
+#menucentral #parteizq #disco h3{
+	font-family: "Monospace", cursive;
+	font-size: 19px;
+	color: #F0E68C;
+	margin-top: 10px;
+	
+}
+
+#menucentral #parteizq #disco #discoizquierda{
+	width: 39%;
+	float: left;
+	text-align: left;
+	margin-right: 10px;
+}
+
+#menucentral #parteizq #disco #discoderecha{
+	text-align: center;
+	float: left;
+	width: 59%;
+	
+}
+#menucentral #parteizq #disco #discoderecha #controlSize{
+	width: 100%;
+}
+
+#menucentral #parteizq #disco #abajo{
+	clear: both;
+	margin-top: 450px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+/*
+*-----------------------------------------------------------------------------
+*                Valoración
+*-----------------------------------------------------------------------------
+**/
+
+#menucentral #parteizq #disco #abajo .valoracion ul {
+	text-align: center;
+	list-style: none;
+	margin: 3px;
+	padding: 0;
+	width: 75px;
+	height: 15px;
+	position: relative;
+	background: url(images/rank.png) top left repeat-x;
+	margin-left: 34%;
+	
+}
+
+#menucentral #parteizq #disco #abajo .valoracion ul li.current-rating {
+	text-align: center;
+	background: url(images/rank.png) left bottom;
+	position: absolute;
+	height: 14px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+
+}
+
+/*
+*-----------------------------------------------------------------------------
+*                Tablas
+*-----------------------------------------------------------------------------
+**/
+
+.tabla {
+	width: 100%;
+	height: 90px;
+	border-spacing: inherit;
+}
+
+.tabla th, .tabla td{
+	
+	text-align: left;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 12px;
+	color: #FFF;
+
+}
+
+.tabla #tama{
+	font-size: 18px;
+}
+
+.tabla #tama2{
+	font-size: 14px;
+}
+
+.tabla #discodestacado{
+	
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 50px;
+	color: #A0522D;
+}
+
+.tabla #discodestacadosub{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 30px;
+	color: #A0522D;
+}
+
+
+.tabla #seccion{
+	font-size: 23px;
+	color: #FFE4B5;
+}
+.tabla #seccionsub{
+	font-size: 18px;
+	color: #FFE4B5;
+}
+
+.tabla #right{
+	text-align: right;
+}
+.tabla #left{
+	text-align: left;
+}
+
+.tabladisco{
+	width: 100%;
+	border: 1px dashed #FFF;
+	border-collapse: collapse;
+}
+
+.tabladisco td{
+	border: 1px dashed #FFF;
+}
+
+.tabladisco tbody tr:nth-child(odd):hover{
+	background-color: #32CD32;
+}
+
+.tabladisco tbody tr:nth-child(even):hover {
+	background-color: #B0C4DE;
+}
+
+
+/*
+*-----------------------------------------------------------------------------
+*                Géneros
+*-----------------------------------------------------------------------------
+**/
+
+.pop{
+	border: 2px solid black;
+	border-color: #FFD700;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	margin-top:3px;
+}
+
+.rock{
+	border: 2px solid black;
+	border-color: #008000;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	margin-top:3px;
+}
+
+.clasica{
+	border: 2px solid black;
+	border-color: #48D1CC;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	margin-top:3px;
+}
+
+.metal{
+	border: 2px solid black;
+	border-color: #FFF5EE;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	margin-top:3px;
+}
+
+/*
+*-----------------------------------------------------------------------------
+*                Menu con las distintas secciones de la tienda
+*-----------------------------------------------------------------------------
+**/
+
+ul#nav {
+	display:block;
+	float:left;
+	font-family:Trebuchet MS,sans-serif;
+	font-size:0;
+	padding:5px 5px 5px 0;
+	background: linear-gradient(#f5f5f5, #c4c4c4);
+	z-index: 1;
+
+}
+ul#nav,ul#nav ul {
+	list-style:none;
+	margin:0;
+}
+ul#nav,ul#nav .subs {
+	background-color:#444;
+	border:1px solid #454545;
+
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	z-index: 1;
+}
+ul#nav .subs {
+	background-color:#fff;
+	border:2px solid #222;
+	display:none;
+	float:left;
+	left:0;
+	padding:0 6px 6px;
+	position:absolute;
+	top:100%;
+	width:300px;
+
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	z-index: 1;
+}
+ul#nav li:hover>* {
+	display:block;
+	z-index: 1;
+}
+ul#nav li:hover {
+	position:relative;
+	z-index: 1;
+}
+ul#nav ul .subs {
+	left:100%;
+	position:absolute;
+	top:0;
+	z-index: 1;
+}
+ul#nav ul {
+	padding:0 5px 5px;
+}
+ul#nav .col {
+	float:left;
+	width:50%;
+}
+ul#nav li {
+	display:block;
+	float:left;
+	font-size:0;
+	white-space:nowrap;
+	z-index: 1;
+}
+ul#nav>li,ul#nav li {
+	margin:0 0 0 5px;
+}
+ul#nav ul>li {
+	margin:5px 0 0;
+}
+ul#nav a:active,ul#nav a:focus {
+	outline-style:none;
+}
+ul#nav a {
+	border-style:none;
+	border-width:0;
+	color:#181818;
+	cursor:pointer;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 18px;
+	text-align:left;
+	text-decoration:none;
+	text-shadow:#fff 0 1px 1px;
+	vertical-align:middle;
+	z-index: 1;
+}
+ul#nav ul li {
+	float:none;
+	margin:6px 0 0;
+}
+ul#nav ul a {
+	background-color:#fff;
+	border-color:#efefef;
+	border-style:solid;
+	border-width:0 0 1px;
+	color:#000;
+	font-size:11px;
+	padding:4px;
+	text-align:left;
+	text-decoration:none;
+	text-shadow:#fff 0 0 0;
+
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+ul#nav li:hover>a {
+	border-style:none;
+	color:#fff;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:#181818 0 1px 1px;
+}
+ul#nav img {
+	border:none;
+	margin-right:8px;
+	vertical-align:middle;
+}
+ul#nav span {
+	background-position:right center;
+	background-repeat:no-repeat;
+	display:block;
+	overflow:visible;
+	padding-right:0;
+}
+ul#nav ul li:hover>a {
+	border-color:#444;
+	border-style:solid;
+	color:#444;
+	font-size:11px;
+	text-decoration:none;
+	text-shadow:#fff 0 0 0;
+}
+ul#nav > li >a {
+	background-color:transpa;
+	height:25px;
+	line-height:25px;
+
+	border-radius:11px;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+}
+ul#nav > li:hover > a {
+	background-color:#313638;
+	line-height:25px;
+}
+
+/*
+*----------------------------------------------------------------
+*                Botones play, pause, mute y on
+*----------------------------------------------------------------
+**/
+button{ border:none; cursor:pointer; outline:none; }
+
+button#playpausebtn {
+	background: url(images/play.png) no-repeat;
+	width:40px;
+	height:40px;
+}
+
+button#mutebtn {
+	background: url(images/on.png) no-repeat;
+	width:40px;
+	height: 40px;
+}
+
+/*
+*----------------------------------------------------------------
+*                Bloque para las ultimas noticias
+*----------------------------------------------------------------
+**/
+
+#ultimasnoticias{
+	height:200px;
+	/*Barra de desplazamiento vertical*/
+	overflow-y:auto;
+	background:#FFF;
+	border-color:#ccc;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+}
+#ultimasnoticias ul{
+	margin-left: -30px;
+	margin-top: 1px;
+	text-align: left;
+}
+#ultimasnoticias li{
+	margin-bottom:7px;
+	
+}
+#ultimasnoticias a{
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+#ultimasnoticias a:hover{
+	text-decoration:underline;
+}
+
+/*
+*-----------------------------------------------------------------------------
+*                Menu con las distintas subsecciones de la tienda
+*-----------------------------------------------------------------------------
+**/
+#seccionestienda{
+	text-decoration:none;
+	min-height:25px;
+	max-width: 320px;
+	background-color:#b10c0d;
+	/*Sombra de la caja*/
+	box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	-moz-box-shadow: 5px 5px 5px #333;
+	text-align:center;
+}
+#seccionestienda a{
+	margin-left:7px;
+	font-weight:bold;
+	font-size:14px;
+	color:#FFF;
+	display:inline;
+	float:left;
+	padding-top:6px;
+	text-decoration:none;
+}
+#seccionestienda a:hover{
+	/*Sombreado efecto foco*/
+	text-shadow: 0px 0px 15px #fff;
+}
+
+.barramenu {
+	padding-left:7px;
+	padding-right:7px;
+	width:20px;
+	height:25px;
+	display:inline;
+	float:left;
+	/*8x71*/	
+}
+
+/*---------------------------------------------------------------------------------------------------------------------
+*               Pie de pagina donde se encuentra la direccion telefono email author de la pagina y formularios
+*---------------------------------------------------------------------------------------------------------------------
+**/
+#piepagina{
+	width: 90%;
+	/*Para que se quede el pie de pagina abajo le hago un clear al both que seria abajo*/
+	clear: both;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	margin-left: 5%;
+	/*Degradado pie de pagina*/
+	background: -webkit-linear-gradient(#b10c0d 50%, #b10c0a);
+	background: -moz-linear-gradient(#b10c0d 50%, #b10c0a);
+	background: -o-linear-gradient(#b10c0d 50%, #b10c0a);
+	background: linear-gradient(#b10c0d 50%, #b10c0a);
+	text-align: center;
+	padding-bottom: 2%;
+	margin-bottom: 1%;
+}
+#piepagina p{
+	font-family: "Comic Sans MS", cursive;
+	font-size: 9px;
+	display: inline;
+	color: #FFF;
+}
+#piepagina a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:9px;
+	text-decoration: none;
+	display:inline;
+	color:#FFF;
+}
+#piepagina img{
+	margin-top:12px;
+	display:inline;
+	
+}
+
+/*
+*--------------------------------------------------------------------------------
+*                Sistema para la separacion de la musica en miniatura
+*--------------------------------------------------------------------------------
+**/
+
+#bloqueminiatura{
+	width:100%;
+	margin:auto;
+	float: center;
+	/*Con esto creamos una tabla*/
+	display:table;
+	overflow:hidden;
+}
+
+#bloqueminiatura h1{
+	font-family: "Comic Sans MS";
+	font-size: 19px;
+	display: inline;
+	text-align: left;
+	color: #FFF;
+}
+
+#bloqueminiatura h2{
+	font-family: "Comic Sans MS";
+	font-size: 14px;
+	display: inline;
+	text-align: left;
+	color: #FFF;
+}
+
+#bloqueminiatura img{
+	width: 100%;
+	height: 90px;
+}
+
+#bloqueizqminiatura{
+	width:30%;
+	/*1columnas*/
+	display: table-cell;
+}
+
+#bloquederminiatura{
+	width:70%;
+	/*2columna*/
+	display: table-cell;
+}
+
+.titulo{
+	float: left;
+	width: 61%;
+}
+
+/*
+*----------------------------------------------------------------
+*              Ventana Emergente
+*----------------------------------------------------------------
+**/
+
+#menucentral #parteizq #disco #flotante
+{
+	text-align: left;
+	position: absolute;
+	display:none;
+	font-family:Arial;
+	font-size:0.8em;
+	width:280px;
+	border:1px solid #808080;
+	background-color:#f1f1f1;
+	padding:5px;
+}
+
+#menucentral #parteizq #disco #flotante h1{
+	text-align: center;
+}
+
+/*
+*----------------------------------------------------------------
+*               Opiniones de los usuarios
+*----------------------------------------------------------------
+**/
+#opiniones{
+	height:150px;
+	/*Barra de desplazamiento vertical*/
+	overflow-y:auto;
+	background:#FFF;
+	border-color:#ccc;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	text-align: left;
+	
+}
+#opiniones ul{
+	margin-left:0px;
+	margin-top:1px;
+}
+#opiniones li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+/* Login Container (default to float:right) */
+#loginContainer {
+	position:relative;
+	float:right;
+	font-size:12px;
+	z-index: 1;
+}
+#loginContainer2{
+	position:relative;
+	float:right;
+	margin-right: 5px;
+	font-size:16px;
+	color:#FFF;
+	font-style: italic;
+	z-index: 1;
+}
+
+
+/* Login Button */
+#loginButton { 
+	display:inline-block;
+	float:right;
+	background:#d2e0ea url(images/buttonbg.png) repeat-x; 
+	border:1px solid #899caa; 
+	border-radius:3px;
+	-moz-border-radius:3px;
+	position:relative;
+	z-index:30;
+	cursor:pointer;
+	z-index: 1;
+}
+
+/* Login Button Text */
+#loginButton span {
+	color:#445058; 
+	font-size:14px; 
+	font-weight:bold; 
+	text-shadow:1px 1px #fff; 
+	padding:7px 29px 9px 10px;
+	background:url(images/loginArrow.png) no-repeat 53px 7px;
+	display:block;
+	z-index: 1;
+}
+
+#loginButton:hover {
+	background:url(images/buttonbgHover.png) repeat-x;
+}
+
+/* Login Box */
+#loginBox {
+	position:absolute;
+	top:34px;
+	right:0;
+	display:none;l
+	z-index:29;
+	z-index: 1;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active {
+	border-radius:3px 3px 0 0;
+}
+
+#loginButton.active span {
+	background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em {
+	position:absolute;
+	width:100%;
+	height:1px;
+	background:#d2e0ea;
+	bottom:-1px;
+}
+
+/* Login Form */
+#loginForm {
+	width:248px; 
+	border:1px solid #899caa;
+	border-radius:3px 0 3px 3px;
+	-moz-border-radius:3px 0 3px 3px;
+	margin-top:-1px;
+	background:#d2e0ea;
+	padding:6px;
+}
+
+#loginForm fieldset {
+	margin:0 0 12px 0;
+	display:block;
+	border:0;
+	padding:0;
+}
+
+fieldset#body {
+	background:#fff;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	padding:10px 13px;
+	margin:0;
+}
+
+#loginForm #checkbox {
+	width:auto;
+	margin:1px 9px 0 0;
+	float:left;
+	padding:0;
+	border:0;
+	*margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+	color:#3a454d;
+	margin:9px 0 0 0;
+	display:block;
+	float:left;
+}
+
+#loginForm #body fieldset label {
+	display:block;
+	float:none;
+	margin:0 0 6px 0;
+}
+
+/* Default Input */
+#loginForm input {
+	width:92%;
+	border:1px solid #899caa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	color:#3a454d;
+	font-weight:bold;
+	padding:8px 8px;
+	box-shadow:inset 0px 1px 3px #bbb;
+	-webkit-box-shadow:inset 0px 1px 3px #bbb;
+	-moz-box-shadow:inset 0px 1px 3px #bbb;
+	font-size:12px;
+}
+
+/* Sign In Button */
+#loginForm #login {
+	width:auto;
+	float:left;
+	background:#339cdf url(images/loginbuttonbg.png) repeat-x;
+	color:#fff;
+	padding:7px 10px 8px 10px;
+	text-shadow:0px -1px #278db8;
+	border:1px solid #339cdf;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	margin:0 12px 0 0;
+	cursor:pointer;
+	*padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+#formulario{
+	text-align: left;
+}
+
+/* Forgot your password */
+#loginForm span {
+	text-align:center;
+	display:block;
+	padding:7px 0 4px 0;
+}
+
+#loginForm span a {
+	color:#3a454d;
+	text-shadow:1px 1px #fff;
+	font-size:12px;
+}
+
+input:focus {
+	outline:none;
+}
+
+.botoni {
+	/* texto */
+	text-align: center;
+	text-decoration: none;
+	color: #222; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	
+	/* Bordes, sombras de la caja */
+	border: 1px solid;
+	box-shadow: 0 0 2px black;
+	margin: 0;
+	padding: 6px 15px;
+	border-radius: 6px;
+}
+.blue {
+	border-color: #0054BC;
+	text-shadow: 0 1px 0 #86B8E8;
+	background: linear-gradient(top,  #499bea 0%,#207ce5 100%);
+}
+
+/*-------------------Adaptado------------------------*/
+
+@media (max-width: 1150px){
+	#rojo{
+		font-size: 250%;
+	}	
+
+	#margen{
+		width: 1%;
+	}
+
+	#bloqueizq{
+		width:49%;
+		/*1columnas*/
+		display: table-cell;
+	}
+	#bloqueder{
+		display: none;
+	}
+	#bloquecentral{
+		width:49%;
+		/*2 columna*/
+		display: table-cell;
+	}
+
+	#seccionestienda .secDer a{
+		margin-left:5px;
+		font-size:12px;
+	}
+
+	#seccionestienda .secDer .barramenu{
+		padding-left:5px;
+		padding-right:5px;
+	}
+}
+
+@media (max-width: 1000px){
+	#rojo{
+		font-size: 220%;
+	}	
+
+	#seccionestienda .secDer a{
+		margin-left:5px;
+		font-size:10px;
+	}
+
+
+}
+
+@media (max-width: 900px){
+	#rojo{
+		font-size: 207%;
+	}	
+	
+	#disTi1{
+		height: 40px;
+		width: 40px;
+	}
+	
+	#disTi2{
+		height: 40px;
+		width: 40px;
+	}
+
+	#seccionestienda .secDer a{
+		margin-left:5px;
+		font-size:8px;
+	}
+}
+
+@media (max-width: 800px){
+	#publicidadder{
+		display: none;
+	}
+
+	#contenedorcentral{
+		width: 100%;
+	}
+
+	#piepagina .abajo{
+		display: none;
+	}
+	
+	#nombretienda{
+		width: 95%;
+	}
+
+	#rojo{
+		font-size: 200%;
+	}
+	
+	#disTi1{
+		height: 30px;
+		width: 30px;
+	}
+	
+	#disTi2{
+		height: 30px;
+		width: 30px;
+	}
+	
+	#tab1{
+		width:1%
+	}
+
+	#seccionestienda .secDer a{
+		margin-left:1px;
+		font-size:8px;
+	}
+
+	
+}
+
+@media (max-width: 620px){
+	#rojo{
+		font-size: 180%;
+	}
+	
+	#usuario {
+		display: none;
+	}
+	
+	#contra {
+		display: none;
+	}
+}
+
+@media (max-width: 520px){
+	#rojo{
+		font-size: 160%;
+	}
+}
+
+@media (max-width: 520px){
+	#rojo{
+		font-size: 160%;
+	}
+	
+	
+}
+
+@media (max-width: 435px){
+
+	#piepagina .abajo{
+		display: none;
+	}
+
+	#piepagina .abajo1{
+		display: none;
+	}
+	
+	
+	#nombretienda{
+		width: 95%;
+		text-align:center;
+	}
+
+	#rojo{
+		font-size: 150%;
+	}
+	
+	#disTi1{
+		height: 20px;
+		width: 20px;
+	}
+	
+	#disTi2{
+		height: 20px;
+		width: 20px;
+	}
+	
+	#tab1{
+		width:1%
+	}
+
+	#margen{
+		width: 0%;
+	}
+
+	#bloqueizq{
+		width:100%;
+		/*1columnas*/
+		display: table-cell;
+	}
+	#bloquecentral{
+		display: none;
+	}
+
+	#menucentral #parteizq{
+		width: 100%;
+	}
+	
+	#menucentral #parteizq #izquierda{
+		width: 100%;
+	}
+
+	#menucentral #parteizq #derecha{
+		width: 100%;
+	}
+
+	#menucentral #parteder{
+		width: 100%;
+	}
+
+	#Nomostrar{
+		display: none;
+	}
+
+
+	ul#nav a {
+		padding:2px 4.5px;
+	}
+
+	ul#nav img {
+		display: none;
+	}
+
+	#seccionestienda .secDer a{
+		margin-left:7px;
+		font-size:14px;
+	}
+	
+}
+
+@media (max-width: 320px){
+	#rojo{
+		font-size: 130%;
+	}
+	
+	#disTi1{
+		height: 15px;
+		width: 15px;
+	}
+	
+	#disTi2{
+		height: 15px;
+		width: 15px;
+	}
+
+	ul#nav a {
+		padding:1px 2.25px;
+		font-size:12px;
+	}
+
+}
